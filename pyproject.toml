@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "claude-ads-core"
-version = "2.0.0"
-description = "Deterministic contracts, validation, and scoring for Claude Ads"
+name = "creative-standards-service"
+version = "1.0.0"
+description = "Versioned creative specifications and deterministic asset validation"
 requires-python = ">=3.11"
 dependencies = []
 
@@ -16,7 +16,7 @@ pdf = ["weasyprint>=69.0,<70.0"]
 claude-ads-core = "claude_ads_core.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["claude_ads_core*"]
+include = ["creative_standards*", "claude_ads_core*"]
 
 [tool.setuptools.package-data]
 claude_ads_core = ["schemas/v1/*.json"]
